@@ -1,0 +1,17 @@
+<form action="../../app/formHandler.php" method="post" class="form form--auth">
+    <input type="hidden" name="auth_hidden">
+    <div class="form__inner vstack col-md-3 mx-auto">
+        <h2 class="form__title">Авторизация</h2>
+        <label class="mb-3 form__label form__label--auth">
+            Имя:
+            <input autocomplete="current-username" type="text" name="auth_name" id="auth_name" class="name form-control">
+            <span class="form__error form__error--auth"></span>
+        </label>
+        <label class="mb-3 form__label form__label--auth">
+            Пароль:
+            <input autocomplete="current-password" type="password" name="auth_password" id="auth_password" class="password form-control">
+            <span class="form__error form__error--auth"></span>
+        </label>
+        <input type="submit" disabled value="Войти" class="btn btn-dark form__button form__button--auth">
+    </div>
+</form>

@@ -1,0 +1,32 @@
+<form action="../../app/formHandler.php" method="post" class="form form--reg">
+    <input type="hidden" name="reg_hidden">
+    <div class="form__inner vstack col-md-3 mx-auto">
+        <h2 class="form__title">Регистрация</h2>
+        <label class="mb-3 form__label form__label--reg">
+            Имя:
+            <input autocomplete="current-username" type="text" name="reg_name" id="reg_name" class="form-control name">
+            <span class="form__error form__error--reg"></span>
+        </label>
+        <label class="mb-3 form__label form__label--reg">
+            Email:
+            <input autocomplete="current-username" type="email" name="reg_email" id="reg_email" class="form-control name">
+            <span class="form__error form__error--reg"></span>
+        </label>
+        <label class="mb-3 form__label form__label--reg">
+            Номер телефона:
+            <input autocomplete="current-username" type="text" name="reg_phone" id="reg_phone" class="form-control name">
+            <span class="form__error form__error--reg"></span>
+        </label>
+        <label class="mb-3 form__label form__label--reg">
+            Пароль:
+            <input autocomplete="current-password" type="password" name="reg_password" id="reg_password" class="form-control password">
+            <span class="form__error form__error--reg"></span>
+        </label>
+        <label class="mb-3 form__label form__label--reg">
+            Подтвердите пароль:
+            <input type="password" name="reg_password_confirm" id="reg_password_confirm" class="form-control password_confirm">
+            <span class="form__error form__error--reg"></span>
+        </label>
+        <input type="submit" value="Регистрация" class="btn btn-dark form__button form__button--reg" disabled>
+    </div>
+</form>

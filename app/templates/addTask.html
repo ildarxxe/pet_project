@@ -1,0 +1,31 @@
+<div class="modal modal--hidden">
+    <form action="../../app/formHandler.php" method="post" class="form form__task">
+        <input type="hidden" name="create_task">
+        <div class="form__inner form__inner--task">
+            <h2 class="form__title form__title--task">Добавить задачу</h2>
+            <label class="form__label form__label-task form__label--task">
+                Ваша задача:
+                <input type="text" name="task_name" class="form-control" id="task_name" placeholder="Введите вашу задачу">
+            </label>
+            <label class="form__label form__label-task form__label--task">
+                Описание:
+                <input type="text" class="form-control" name="task_desc" id="task_desc" placeholder="Введите описание">
+            </label>
+            <label class="form__label form__label-task form__label--task">
+                Выберите приоритет:
+                <select name="priority" class="form-select" id="select_priority">
+                    <option value="">--Выберите приоритет--</option>
+                    <option value="Critical">Критический</option>
+                    <option value="High">Высокий</option>
+                    <option value="Moderate">Средний</option>
+                    <option value="Low">Маленький</option>
+                    <option value="Negligible">Незначительный</option>
+                  </select>
+            </label>
+            <div class="form__buttons">
+                <input type="submit" value="Добавить" class="form__button form__button--task">
+                <input type="button" value="Закрыть" style="cursor: pointer!important;" class="form__button form__button--task form__button--close">
+            </div>
+        </div>
+    </form>
+</div>
